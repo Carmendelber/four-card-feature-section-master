@@ -39,6 +39,7 @@ h2 {
 }
 
 .card {
+    display: block;
     background-color: white;
     border-top: 4px solid black;
     border-radius: 8px;
@@ -50,6 +51,7 @@ h2 {
 .card__role {
     color: hsl(234, 12%, 34%);
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .card__description {
@@ -68,3 +70,34 @@ h2 {
 .card.red {border-color: hsl(0, 78%, 62%)}
 .card.orange {border-color: hsl(34, 97%, 64%)}
 .card.blue {border-color: hsl(212, 86%, 64%)}
+
+@media (min-width:1000px) {
+    
+    main {
+        width: 80%;
+        max-width: 995px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 34px;
+        padding: 0 22%;
+    }
+    h2 {padding: 0 22%;}
+
+    .card {
+        flex: 33.3%;
+        max-width: 315px;
+    }
+
+    .t-card-central {
+        flex: 33.3%;
+        margin: 0 25px;
+    }
+
+    }
+    
